@@ -10,45 +10,55 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    html, body {
-      height: 100vh;
-      margin: 0;
-    }
+  body{
+    background-color:hsl(212, 45%, 89%);
+    font-family: Outfit;
+  } 
 
-    body {
-      background-color: darkgray;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
+  .qr-code-image{
+    width: 190px;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
 
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+  .div-1{
+    display: flex;
+    flex-direction: column;
+    max-width: 190px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 12px;
+    background-color: white;
+    position: fixed;
+    inset: 0px;
+    height: fit-content;
+  }
 
-    
-    .container {
-      background-color: white;
-      border-radius: 15px;
-      padding: 4%;
-      text-align: center;
-      width: fit-content;
-      max-width: 300px;
+  .para-1{
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    color: hsl(218, 44%, 22%);
+  }
 
-    }
-
-    #qr_image {
-      height: 100px;
-      width: 100px;
-      border-radius: 10px;
-    }
+  .para-2{
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 11px;
+    color: hsl(220, 15%, 55%);
+  }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img id="qr_image" src="./images/image-qr-code.png" alt="This is a qr image to be scanned"/>
-    <p><b>Improve your front-end skills by building projects</b></p>
-    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  <div class="div-1">
+    <img alt="qr-code-that-takes-you-to-frontend-mentor-homepage" class ="qr-code-image" src="images/image-qr-code.png">
+    <div class="para-1">
+      Improve your front-end skills by building projects
+    </div> 
+    <div class="para-2">
+      Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+    </div>
   </div>
 </body>
 </html>
